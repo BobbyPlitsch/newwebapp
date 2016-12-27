@@ -2,12 +2,65 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: #000;
+$font-size: 3em;
+
+
+html, body {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 body {
+  margin-top: 85px;
+  text-align: center;
 
-  h1 {
-    font: 100% $font-stack;
+  .navbar{
+    background-color: #000;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+
+  .navbar-collapse > ul > li > .nav-color,
+  .navbar-header > div > p {
+    color: green ;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 800ms;
+  }
+
+  .index h1 {
+    font: 100% $font-stack $font-size;
     color: $primary-color;
   }
+
+  .index p {
+    font: 100% $font-stack;
+    font-size: 1.5em;
+    color: $primary-color
+  }
+
+  .row {
+    width: 98%;
+    margin: auto;
+  }
+
+
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: white;
+    display: inline-block;
+    margin: auto;
+    padding-left: -15px;
+    padding-right: -15px;
+    text-align: right;
+  }
+  footer div p {color: white;}
+
+
 }

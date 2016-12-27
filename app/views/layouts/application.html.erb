@@ -2,25 +2,43 @@
 <html>
   <head>
     <title>Newwebapp</title>
-    <%= csrf_meta_tags %>
 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <section class=" container-fluid">
+        <div class="navbar-header">
+          <div class="projectName navbar-brand">
+            <p>Project Name</p>
+          </div> <!--end projectName-->
+        </div><!--end navbar-header-->
+        <div class="navbar-collapse collapse">
+          <ul class=" nav navbar-nav navbar-right">
+            <li><%= link_to "index", index_path, :class => "nav-color" %></li>
+            <li><%= link_to "about", about_path, :class => "nav-color" %></li>
+            <li><%= link_to "contact", contact_path, :class => "nav-color" %></li>
+          </ul>
+        </div> <!--end navbar-collapse-->
+      </section><!--end-container-fluid-->
+    </nav> <!--end navigation bar-->
 
-    <nav>
-      <ul>
-        <li><%= link_to "index", index_path %></li>
-        <li><%= link_to "about", about_path %></li>
-        <li><%= link_to "contact", contact_path %></li>
-      </ul>
-    </nav>
 
     <%= yield %>
 
     <footer>
-      &copy 2016 WebDevelopment Assistance
+      <div class:"footer">
+        <p>&copy 2016 WebDevelopment Assistance </p>
+      </div>
+    </footer>
   </body>
 </html>
