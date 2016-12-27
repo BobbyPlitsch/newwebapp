@@ -12,15 +12,15 @@
 
     <nav>
       <ul>
-        <li><%= link_to "index", "static_pages#index" %></li>
-        <li><%= link_to "about", "static_pages#about" %></li>
-        <li><%= link_to "contact", "static_pages#contact" %></li>
+        <li><%= link_to "index", index_path %></li>
+        <li><%= link_to "about", about_path %></li>
+        <li><%= link_to "contact", contact_path %></li>
       </ul>
     </nav>
 
     <%= yield %>
 
     <footer>
-      &copy 2016 WebDevelopment Assistence
+      &copy 2016 WebDevelopment Assistance
   </body>
 </html>
