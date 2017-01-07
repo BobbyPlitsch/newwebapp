@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'home', to: 'static_pages#index'
 
+  resources :orders, only: [:index, :show, :creat, :destroy]
+
 
   root 'static_pages#index'
 
