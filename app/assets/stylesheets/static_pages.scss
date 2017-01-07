@@ -5,7 +5,7 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #000;
 $font-size: 3em;
 
-
+* {margin: 0;}
 html, body {
   width: 100%;
   height: 100%;
@@ -59,18 +59,23 @@ body {
     margin: auto;
   }
 
+  .page_wrap {
+    min-height: 100%;
+    margin-bottom: -40px;
+  }
+  .page_wrap:after {
+    content: "";
+    display: block;
+  }
 
-  footer {
+  .site_footer, .page_wrap:after {
     width: 100%;
+    height: 40px;
     background-color: #000;
     color: white;
     text-align: right;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
-    clear: both;
   }
-  footer div p {color: white;}
-
-
 }

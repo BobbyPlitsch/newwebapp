@@ -3,7 +3,6 @@
   <head>
     <title>Newwebapp</title>
 
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
@@ -28,12 +27,13 @@
       </section><!--end-container-fluid-->
     </nav> <!--end navigation bar-->
 
-
-    <%= yield %>
+    <div class="page_wrap">
+      <%= yield %>
+    </div>
 
     <footer>
-      <div class:"footer">
-        <p>&copy 2016 WebDevelopment Assistance </p>
+      <div class="site_footer">
+        &copy 2016 WebDevelopment Assistance 
       </div>
     </footer>
   </body>
