@@ -6,12 +6,7 @@
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm 12 col-md-4 col-xl-4 product_layout">
-        <%= image_tag(product.image_url, class:"img-responsive product_image") %>
-        <p>  <%= product.name %> </p>
-        <p>  <%= product.description %> </p>
-        <p><strong>  <%= product.prize %> </strong></p>
-      </div>
+      <%=  render partial: "shared/product", collection: @products %>
     <% end %>
   </div>
 </div>

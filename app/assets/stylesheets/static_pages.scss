@@ -43,6 +43,10 @@ body {
     transition: color 800ms;
   }
 
+  .carousel {
+    margin-bottom: 550px; 
+  }
+
   .index h1 {
     font: 100% $font-stack $font-size;
     color: $primary-color;
