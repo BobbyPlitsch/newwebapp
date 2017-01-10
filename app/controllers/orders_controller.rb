@@ -9,7 +9,7 @@ class OrdersController < ApplicationController
   def new
   end
 
-  def created
+  def create
   end
 
   def destroy

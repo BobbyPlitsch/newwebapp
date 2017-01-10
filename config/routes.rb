@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   get 'home', to: 'static_pages#index'
 
+  get 'orders/index', to: 'orders#index'
+
+  get 'orders/show', to: 'orders#show'
+
   resources :orders, only: [:index, :show, :creat, :destroy]
 
 
