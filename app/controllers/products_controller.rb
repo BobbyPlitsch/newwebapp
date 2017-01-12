@@ -1,4 +1,4 @@
-class ProductsController < ApplicationController
+class ProductsController < ApplicationController::Base
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
