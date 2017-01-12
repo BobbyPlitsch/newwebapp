@@ -10,7 +10,11 @@ Rails.application.routes.draw do
 
   get 'orders/show', to: 'orders#show'
 
+<<<<<<< HEAD
   resources :orders, only: [:index, :show, :create, :destroy]
+=======
+  resources :orders, only: [:index, :show, :create, :destroy]
+>>>>>>> 26ba616309cd489f3149e2d194d546a00d05016e
 
 
   root 'static_pages#landing_page'
