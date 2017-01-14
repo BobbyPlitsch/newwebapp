@@ -47,7 +47,7 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I/home/bobby/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-linux -I/home/bobby/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/home/bobby/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/home/bobby/.rbenv/versions/2.3.1/include     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat conftest.c  -L. -L/home/bobby/.rbenv/versions/2.3.1/lib -Wl,-R/home/bobby/.rbenv/versions/2.3.1/lib -L. -L/home/bobby/.rbenv/versions/2.3.1/lib  -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-R/home/bobby/.rbenv/versions/2.3.1/lib -L/home/bobby/.rbenv/versions/2.3.1/lib -lruby-static  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
-/tmp/cczHZ8BE.o: In Funktion `t':
+/tmp/ccPcTRau.o: In Funktion `t':
 /home/bobby/Dropbox/WebDev/RoR/Rails/newwebapp/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r/conftest.c:14: Nicht definierter Verweis auf `rb_thread_blocking_region'
 collect2: error: ld returned 1 exit status
 checked program was:

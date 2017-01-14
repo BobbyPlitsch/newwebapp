@@ -1,5 +1,5 @@
 current directory: /home/bobby/Dropbox/WebDev/RoR/Rails/newwebapp/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r
-/home/bobby/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20170112-17845-zsa33x.rb extconf.rb
+/home/bobby/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20170114-17211-4r14o2.rb extconf.rb
 checking for unistd.h... yes
 checking for rb_thread_blocking_region()... no
 checking for rb_thread_call_without_gvl()... yes
@@ -402,4 +402,4 @@ linking shared-object nio4r_ext.so
 
 current directory: /home/bobby/Dropbox/WebDev/RoR/Rails/newwebapp/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20170112-17845-zc85bi
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20170114-17211-jlj732

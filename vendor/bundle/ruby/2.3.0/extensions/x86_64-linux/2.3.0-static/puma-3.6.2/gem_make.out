@@ -1,5 +1,5 @@
 current directory: /home/bobby/Dropbox/WebDev/RoR/Rails/newwebapp/vendor/bundle/ruby/2.3.0/gems/puma-3.6.2/ext/puma_http11
-/home/bobby/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20170112-17845-c68eox.rb extconf.rb
+/home/bobby/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20170114-17211-zmhkwt.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
@@ -55,4 +55,4 @@ linking shared-object puma/puma_http11.so
 
 current directory: /home/bobby/Dropbox/WebDev/RoR/Rails/newwebapp/vendor/bundle/ruby/2.3.0/gems/puma-3.6.2/ext/puma_http11
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20170112-17845-cmv49j/puma
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20170114-17211-oomkz1/puma
