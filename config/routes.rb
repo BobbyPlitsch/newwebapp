@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'orders/show', to: 'orders#show'
 
+  get 'landing_page', to: redirect('/about')
+
   resources :orders, only: [:index, :show, :create, :destroy]
 
 
