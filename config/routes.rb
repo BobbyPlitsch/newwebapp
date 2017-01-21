@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
+
   resources :products
+  resources :users
+
   get 'about', to: 'static_pages#about'
 
   get 'contact', to: 'static_pages#contact'
@@ -10,7 +14,11 @@ Rails.application.routes.draw do
 
   get 'orders/show', to: 'orders#show'
 
-  get 'landing_page', to: redirect('/about')
+  get 'landing_page', to: 'static_pages#landing_page'
+
+
+
+
 
   resources :orders, only: [:index, :show, :create, :destroy]
 

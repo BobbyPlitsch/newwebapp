@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1> Users </h1>
+
+  <div class="users">
+    <table style="width:100%">
+
+        <%= @users.each do |user| %>
+        <tr>
+          <th><%= user.name %></th>
+          <th><%= user.email %></th>
+        </tr>
+        <% end %>
+    </table>
+  </div>
+
+<%= link_to 'Sign Up', new_user_path %>
