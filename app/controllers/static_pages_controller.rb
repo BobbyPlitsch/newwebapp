@@ -7,11 +7,14 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
-    redirect_to :back
+
   end
 
   def landing_page
     @products = Product.limit(3)
+  end
+
+  def admin
   end
 
 end
