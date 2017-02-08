@@ -1,2 +1,14 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb hass</p>
+<h1>Contact me here</h1>
+
+
+<%= form_for(@product) do |f| %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email%>
+
+  <%= f.label :message %>
+  <%= f.text_field :message %>
+
+  <%= f.submit 'Submit', class:"btn primary-btn" %>
+
+<% end %>
