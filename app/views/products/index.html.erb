@@ -5,9 +5,9 @@
 
 <div class="container-fluid">
   <div class="row">
-    <% @products.each do |product| %>
-      <%=  render partial: "shared/product", collection: @products %>
-    <% end %>
+
+      <%=  render "shared/product" %>
+
   </div>
 </div>
 <%= link_to 'New Product', new_product_path %>

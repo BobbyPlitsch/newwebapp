@@ -27,16 +27,26 @@
             <li class="form-inline navbar-form"><%= form_tag("/products", method:"get") do %>
               <%= text_field_tag(:q) %>
               <%= submit_tag("Search") %>
-            <% end %></li>
 
+            <% end %></li>
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "nav-color") %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path, :class => "nav-color") %>
+              <% end %>
+            </li>
           </ul>
         </div> <!--end navbar-collapse-->
       </section><!--end-container-fluid-->
     </nav> <!--end navigation bar-->
 
+
     <div class="page_wrap">
       <%= yield %>
     </div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <footer>
       <div class="site_footer">

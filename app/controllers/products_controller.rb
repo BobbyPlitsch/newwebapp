@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
         @products = Product.where("name LIKE ?", "%#{search_term}%")
       end
     else
-      @products = Product.limit(3)
+      @products = Product.all
     end
   end
 
