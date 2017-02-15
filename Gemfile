@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
-
+gem 'cancancan' 
 # gem 'capistrano-rails', group: :development
 gem 'devise'
 group :development, :test do
@@ -40,7 +40,7 @@ gem 'byebug', platform: :mri
 
 gem 'sqlite3'
 
-gem 'cancancan'  
+
 end
 
 group :development do
