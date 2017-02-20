@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :products
   resources :users
+  resources :orders
 
   get 'about', to: 'static_pages#about'
 
@@ -11,7 +12,7 @@ Rails.application.routes.draw do
 
   get 'home', to: 'static_pages#index'
 
-  get 'orders/index', to: 'orders#index'
+  get 'index', to: 'orders#index'
 
   get 'orders/show', to: 'orders#show'
 

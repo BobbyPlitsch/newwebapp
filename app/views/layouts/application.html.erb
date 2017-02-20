@@ -28,11 +28,13 @@
               <%= submit_tag("Search") %>
 
             <% end %></li>
-            <li>
+
               <% if user_signed_in? %>
-                <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "nav-color") %>
+                <li><%= link_to "Orders", orders_path, :class => "nav-color" %></li>
+                <li><%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "nav-color") %></li>
+
               <% else %>
-                <%= link_to('Login', new_user_session_path, :class => "nav-color") %>
+                <li><%= link_to('Login', new_user_session_path, :class => "nav-color") %></li>
               <% end %>
             </li>
           </ul>
@@ -43,9 +45,9 @@
 
     <div class="page_wrap">
       <% if notice %>
-        <p id="notice" class="alert alert-info"><%= notice %></p>
+        <p id="notice" class="notice"><%= notice %></p>
       <% end %>
-      <% if alert %>
+      <% if notice %>
         <p id="alert" class="alert alert-info"><%= alert %></p>
       <% end %>
 
