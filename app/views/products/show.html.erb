@@ -5,31 +5,38 @@
     <p>
       <%= image_tag(@product.image_url, class:"img-thumbnail product_image") %>
     </p>
-
-    <p>
+    <hr>
+    <p class="left">
       <strong>Name:</strong>
       <%= @product.name %>
     </p>
-
-    <p>
+    <hr>
+    <p class="left">
       <strong>Description:</strong>
       <%= @product.description %>
     </p>
-
-    <p>
+    <hr>
+    <p class="left">
       <strong>Image url:</strong>
       <%= @product.image_url %>
     </p>
-
-    <p>
+    <hr>
+    <p class="left">
       <strong>Price:</strong>
       <%= @product.price %>
     </p>
-
+    <hr>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', products_path %>
+    <hr>
+    <p class="left">Average Rating: <div class="rated left" data-score="<%= @product.average_rating %>"></div> </p>
+    <hr>
     <p>
-      <strong>Comments: </strong>
-
+      <%= render 'new_comment' %>
+    </p>
+    <p>
+      <%= render "comments" %>
     </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+  </div>
+</div>
