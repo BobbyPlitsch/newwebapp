@@ -7,6 +7,7 @@
 .product_layout {
   border: 1px solid black;
   padding: 5px;
+
 }
 .layout {
   font-size: 2em;
@@ -14,11 +15,14 @@
 
 .left {text-align: left;}
 
+.products {height: 600px;}
 
 .product_image {
   margin: 0px auto;
   display: block;
+  width: 80%;
 }
+
 .product_layout p {
   font-size: 1.3em;
 }

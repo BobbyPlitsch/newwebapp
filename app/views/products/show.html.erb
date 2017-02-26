@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="col-md-6 col-md-offset-0   product_layout  bgdc-show">
+  <div class="col-md-4 col-md-offset-0   product_layout  bgdc-show">
     <p>
       <%= image_tag(@product.image_url, class:"img-thumbnail product_image") %>
     </p>
@@ -14,11 +14,6 @@
     <p class="left">
       <strong>Description:</strong>
       <%= @product.description %>
-    </p>
-    <hr>
-    <p class="left">
-      <strong>Image url:</strong>
-      <%= @product.image_url %>
     </p>
     <hr>
     <p class="left">

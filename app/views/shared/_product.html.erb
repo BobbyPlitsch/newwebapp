@@ -1,6 +1,6 @@
 <% @products.each do |product| %>
-  <div class="col-sm 12 col-md-4 col-xl-4 product_layout">
-    <%= image_tag(product.image_url, class:"img-responsive product_image") %>
+  <div class="col-sm 12 col-md-4 col-xl-4 product_layout products">
+    <%= link_to image_tag(product.image_url, class:"img-responsive product_image"), product %>
     <p>  <%= product.name %> </p>
     <p>  <%= product.description %> </p>
     <p><strong>  <%= product.price %> </strong></p>
