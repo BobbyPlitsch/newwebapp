@@ -4,9 +4,7 @@ class CreateTable < ActiveRecord::Migration[5.0]
       t.string :name
       t.text :description
       t.string :image_url
-      t.float :price
-      
-      t.timestamps
+      t.decimal :price
     end
   end
 end
