@@ -13,16 +13,16 @@
 
 
     <%= f.label :name %>
-    <%= f.text_field :name, class:"form-control" %>
+    <%= f.text_field :name, class:"form-control", :required => 'required' %>
 
     <%= f.label :description %>
-    <%= f.text_area :description, class:"form-control" %>
+    <%= f.text_area :description, class:"form-control", :required => 'required'  %>
 
     <%= f.label :image_url %>
-    <%= f.text_field :image_url, class:"form-control" %>
+    <%= f.text_field :image_url, class:"form-control", :required => 'required' %>
 
     <%= f.label :price %>
-    <%= f.text_field :price, class:"form-control" %>
+    <%= f.text_field :price, class:"form-control", :required => 'required' %>
 
     <%= f.submit "Submit", class:"btn primary-btn" %>
 

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
   devise_for :users
-  
+
   resources :users
   resources :orders
 
@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get 'admin', to: 'static_pages#admin'
 
   post 'static_pages/thank_you'
+
 
 
 
