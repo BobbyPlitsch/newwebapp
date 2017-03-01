@@ -45,6 +45,8 @@ gem 'byebug', platform: :mri
 
 gem 'sqlite3'
 
+gem 'rspec-rails'
+
 
 end
 
