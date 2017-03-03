@@ -1,15 +1,17 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<h1 class="pp-inline">Products</h1>
 
+<%= link_to 'New Product', new_product_path, class:"pp-inline float-right" %>
 
 <div class="container-fluid">
+
   <div class="row">
 
       <%=  render "shared/product" %>
 
   </div>
 </div>
-<%= link_to 'New Product', new_product_path %>
 
+
+<%= will_paginate @products %>
 <br>

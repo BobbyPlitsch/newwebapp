@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <div class="row">
   <div class="col-md-4 col-md-offset-0   product_layout  bgdc-show">
     <p>
@@ -24,7 +22,7 @@
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
     <hr>
-    <p class="left">Average Rating: <div class="rated left" data-score="<%= @product.average_rating %>"></div> </p>
+    <p class="left">Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
     <hr>
     <p>
       <%= render 'new_comment' %>

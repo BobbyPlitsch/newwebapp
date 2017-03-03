@@ -22,8 +22,7 @@
             <li><%= link_to "About", about_path, :class => "nav-color" %></li>
             <li><%= link_to "Contact", contact_path, :class => "nav-color" %></li>
             <li><%= link_to "Products", products_path, :class => "nav-color" %></li>
-            <li><%= link_to "Admin", admin_path, :class => "nav-color"%></li>
-            <li class="form-inline navbar-form"><%= form_tag("/products", method:"get") do %>
+            <li class="form-inline navbar-form" style="margin-top: 12px;"><%= form_tag("/products", method:"get") do %>
               <%= text_field_tag(:q) %>
               <%= submit_tag("Search") %>
 
