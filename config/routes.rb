@@ -22,8 +22,6 @@ Rails.application.routes.draw do
 
   get 'landing_page', to: 'static_pages#landing_page'
 
-  get 'admin', to: 'static_pages#admin'
-
   post 'static_pages/thank_you'
 
 
