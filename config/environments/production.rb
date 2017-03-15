@@ -56,7 +56,24 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "newwebapp_#{Rails.env}"
   config.action_mailer.perform_caching = false
+  #Added per active admin install instructions
+  config.action_mailer.default_url_options = { :host => 'bobbyplitsch.herokuapp.com' }
 
+
+  #These settings are for the sending out email for active admin and consequently the   devise mailer
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.perform_deliveries = true
+  ActionMailer::Base.raise_delivery_errors = true
+  ActionMailer::Base.smtp_settings =
+  {
+
+    :address            => 'smtp.gmx.net',
+    :port               => 587,
+    :domain             => 'gmx.net', #you can also use google.com
+    :authentication     => :plain,
+    :user_name          => 'robertpeitsch@gmx.net',
+    :password           => '?poly420klet#'
+  }
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
