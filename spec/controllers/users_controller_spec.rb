@@ -22,7 +22,7 @@ describe UsersController, :type => :controller do
     context "No user is logged in" do
       it 'redirects to login' do
         get :show, id: user.id
-        expect(response).to redirect_to(user_session_path)
+        expect(response).to redirect_to(root_path)
       end
     end
 
