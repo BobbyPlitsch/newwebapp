@@ -42,6 +42,7 @@ gem 'will_paginate'
 
 gem 'rails-controller-testing'
 
+gem "stripe"
 
 
 group :development, :test do
