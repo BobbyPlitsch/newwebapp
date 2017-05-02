@@ -1,5 +1,5 @@
 current directory: /home/bobbyplitsch/Dropbox/WebDev/RoR/Rails/newwebapp/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
-/home/bobbyplitsch/.rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20170415-19477-19407m4.rb extconf.rb
+/home/bobbyplitsch/.rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20170419-19446-174oxhl.rb extconf.rb
 checking for unistd.h... yes
 checking for sys/select.h... yes
 checking for poll.h... yes
@@ -373,4 +373,4 @@ linking shared-object nio4r_ext.so
 
 current directory: /home/bobbyplitsch/Dropbox/WebDev/RoR/Rails/newwebapp/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -m 0755 nio4r_ext.so ./.gem.20170415-19477-1htqkal
+/usr/bin/install -m 0755 nio4r_ext.so ./.gem.20170419-19446-2czidt
