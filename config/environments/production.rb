@@ -69,10 +69,11 @@ Rails.application.configure do
 
     :address            => 'smtp.gmx.net',
     :port               => 587,
-    :domain             => 'gmx.net', #you can also use google.com
     :authentication     => :plain,
-    :user_name          => 'robertpeitsch@gmx.net',
-    :password           => '?poly420klet#'
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :domain => 'heroku.com',
+    :enable_starttls_auto => true
   }
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
