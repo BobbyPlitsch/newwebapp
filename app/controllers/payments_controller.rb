@@ -2,7 +2,6 @@ class PaymentsController < ApplicationController
 
   # Set your secret key: remember to change this to your live secret key in production
 # See your keys here: https://dashboard.stripe.com/account/apikeys
-  Stripe.api_key = "sk_test_1EE1kLy0CZfu2RJhI4hl5fJu"
 
   def create
     token = params[:stripeToken]
@@ -15,7 +14,7 @@ class PaymentsController < ApplicationController
         :currency => "usd",
         :source => token,
         :description => @product.description,
-        :receipt_email => @user.email
+        :receipt_email => params[:stripeEmail]
         )
 
         if charge.paid
