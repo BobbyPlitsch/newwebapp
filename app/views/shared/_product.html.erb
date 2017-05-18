@@ -1,3 +1,4 @@
+<% cache @product do %>
 <% @products.each do |product| %>
   <div class="col-sm 12 col-md-4 col-xl-4 product_layout">
     <%= link_to image_tag(product.image_url, class:"img-responsive product_image"), product %>
@@ -9,4 +10,5 @@
     <button type="button" class="btn btn-default "> <%= link_to "Show", product_path(product) %></button>
 
   </div>
+<% end %>
 <% end %>

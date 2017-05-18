@@ -2,7 +2,7 @@
 <h1 class="pp-inline">Products</h1>
 
 <%= link_to 'New Product', new_product_path, class:"pp-inline float-right" %>
-
+<% cache(cache_key_for_products) do %>
 <div class="container-fluid">
 
   <div class="row">
@@ -11,7 +11,7 @@
 
   </div>
 </div>
-
+<% end %>
 
 <%= will_paginate @products %>
 <br>

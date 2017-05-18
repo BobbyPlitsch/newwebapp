@@ -3,6 +3,7 @@
     <p>
       <%= image_tag(@product.image_url, width: "350", class:"img-zoom img-thumbnail product_image", data_zoom_image: @product.image_url) %>
     </p>
+    <% cache @product do %>
     <hr>
     <p class="left">
       <strong>Name:</strong>
@@ -13,6 +14,7 @@
       <strong>Description:</strong>
       <%= @product.description %>
     </p>
+    <% end %>
     <hr>
     <p class="left">
       <strong>Price:</strong>
