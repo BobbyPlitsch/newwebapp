@@ -20,6 +20,11 @@
       <strong>Price:</strong>
       <%= @product.price %>
     </p>
+    <hr>
+    <p class="left">
+      <strong>  Views:</strong>
+     <%= @product.views %>
+    </p>
 
     <hr>
     <%= form_tag ("/payments/create") do %>
@@ -30,6 +35,9 @@
     <hr>
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
+
+
+
     <hr>
     <p class="left">Average Rating: <div class="rated" id="average_rating" data-score="<%= @product.average_rating %>"></div> </p>
     <hr>
