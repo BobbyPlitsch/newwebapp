@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function(){
+$(document).on('turbolinks:load', refreshRating = function(){
     $('.rating').raty({ path: "/assets", scoreName: 'comment[rating]' });
     $('.rated').raty({ path: '/assets',
         readOnly: true,

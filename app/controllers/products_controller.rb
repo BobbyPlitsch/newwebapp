@@ -1,17 +1,14 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   # GET /products
   # GET /products.json
   def index
     if params[:q]
       search_term = params[:q]
-
-      if (Rails.env == "production")
-        @products = Product.where("name ilike ?", "%#{search_term}%")
-      else
-        @products = Product.where("name LIKE ?", "%#{search_term}%")
-      end
+      like_operator = Rails.env.production? ? 'ilike' : 'like'
+      @products = Product.where("name #{like_operator} ?", "%#{search_term}%")
     else
       @products = Product.all
     end

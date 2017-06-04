@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <th>Title</th>
+    <th>Title | </th>
     <th>Summary</th>
     <th></th>
     <th></th>
@@ -13,9 +13,9 @@
 
 <% @orders.each do |order| %>
   <tr>
-    <td><%= order.user_id %></td>
+    <td><%= order.user&.first_name %></td>
     <td><%= order.product_id %></td>
-    <td><%= link_to "Show", book %></td>
+    <td><%= link_to "Show", product_path(order.product) %></td>
 
   </tr>
 <% end %>

@@ -5,7 +5,7 @@ describe UsersController, type: :controller do
 
 before do
     @user = FactoryGirl.create(:user)
-    @user1 = User.create!(email: "example1@example.com", password: "timeforatest")
+    @user1 = FactoryGirl.create(:user)
   end
 
   describe "GET #show" do
@@ -32,6 +32,8 @@ before do
         get :show, params: { id: @user1.id }
         expect(response).to have_http_status(200)
         redirect_to(fallback_location: root_path)
+        expect(assigns(:user)).not_to eq(@user2)
+        redirect_to root_url
       end
     end
   end

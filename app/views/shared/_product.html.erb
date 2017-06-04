@@ -5,7 +5,9 @@
     <p>  <%= product.name %> </p>
     <p>  <%= product.description %> </p>
     <p><strong>  <%= product.price %> </strong></p>
-    <%= link_to "Edit", edit_product_path(product) %><br>
+    <% if current_user && current_user.admin? %>
+      <%= link_to "Edit", edit_product_path(product) %><br>
+    <% end %>
     <br>
     <button type="button" class="btn btn-default "> <%= link_to "Show", product_path(product) %></button>
 

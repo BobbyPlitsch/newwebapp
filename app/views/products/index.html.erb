@@ -1,7 +1,8 @@
 
 <h1 class="pp-inline">Products</h1>
-
-<%= link_to 'New Product', new_product_path, class:"pp-inline float-right" %>
+<% if current_user && current_user.admin? %>
+  <%= link_to 'New Product', new_product_path, class:"pp-inline float-right" %>
+<% end %>
 <% cache(cache_key_for_products) do %>
 <div class="container-fluid">
 
