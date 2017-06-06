@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    byebug
     if params[:q]
       search_term = params[:q]
       like_operator = Rails.env.production? ? 'ilike' : 'like'

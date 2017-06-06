@@ -4,6 +4,7 @@ class PaymentsController < ApplicationController
 # See your keys here: https://dashboard.stripe.com/account/apikeys
 
   def create
+    byebug
     token = params[:stripeToken]
     @product = Product.find(params[:product_id])
     @user = current_user
